@@ -32,9 +32,8 @@
     "test:flow": "flow check",
     "test:jest": "jest",
     "test:eslint": "eslint src",
-    "prepare": "yarn build",
     "precommit": "pretty-quick --staged && test",
-    "prepublishOnly": "git-branch-is master"
+    "prepublishOnly": "git-branch-is master && yarn build"
   },
   "jest": {
     "setupFilesAfterEnv": [
